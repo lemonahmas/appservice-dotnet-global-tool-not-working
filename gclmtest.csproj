@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="mkdir gclm_dir&#xD;&#xA;cd gclm_dir&#xD;&#xA;&#xD;&#xA;dotnet new tool-manifest&#xD;&#xA;&#xD;&#xA;dotnet tool install dotnetsay&#xD;&#xA;dotnet tool run dotnetsay" />
+    <Exec Command="dotnet tool install gclm -g &#xD;&#xA;chmod +x $HOME/.dotnet/tools/*" />
   </Target>
 
 
