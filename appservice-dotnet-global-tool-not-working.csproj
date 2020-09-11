@@ -5,9 +5,8 @@
   </PropertyGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="dotnet tool install GrapeCity.LicenseManagerTool -g &#xD;&#xA;chmod +x $HOME/.dotnet/tools/*" />
+    <Exec Command="dotnet tool install dotnetsay -g &#xD;&#xA;dotnetsay test" />
   </Target>
-
 
 
 </Project>
