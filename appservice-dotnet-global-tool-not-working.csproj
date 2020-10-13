@@ -6,7 +6,7 @@
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Command="dotnet tool install dotnetsay" />
-    <Exec Command="dotnet tool run dotnetsay test" />
+    <Exec Command="dotnet dotnetsay f" />
   </Target>
 
 
