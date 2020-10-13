@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="dotnet tool install dotnetsay -g &#xD;&#xA;dotnetsay test" />
+    <Exec Command="dotnet tool install dotnetsay &#xD;&#xA;dotnet tool run dotnetsay test" />
   </Target>
 
 
