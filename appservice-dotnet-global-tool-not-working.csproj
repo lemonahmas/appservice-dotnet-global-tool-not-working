@@ -1,11 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="dotnet tool install dotnetsay &#xD;&#xA;dotnet tool run dotnetsay test" />
+    <Exec Command="dotnet tool install dotnetsay" />
+    <Exec Command="dotnet tool run dotnetsay test"/>
   </Target>
 
 
